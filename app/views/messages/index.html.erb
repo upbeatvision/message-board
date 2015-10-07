@@ -29,11 +29,17 @@
 
 <%= form_for(Message.new) do |f| %>
 <form class="form-horizontal">
+  <div class="form-group">
   名前:
   <%= f.text_field :name %>
+  </div>
+ <div class="form-group">
   内容:
   <%= f.text_area :body %>
+ </div>
+ <div class="form-group">
   <%= f.submit class: "btn btn-sm btn-primary" %>
+ </div>
 </form>
 <% end %>
 
